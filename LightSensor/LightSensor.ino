@@ -64,10 +64,7 @@ void loop() {
   // Set values to send
   myData.id = 2;
   giatri[i++] = analogRead(cambien); //Đọc giá trị analog của cảm biến và gán vào biến giatri
-  
-  // myData.anhSang = analogRead(cambien);
-  // if(myData.anhSang > 1800) myData.anhSang = 0;
-  // else myData.anhSang = 1;
+
   Serial.print("Gia tri cam bien: ");
   Serial.println(giatri[i-1]);
   
@@ -99,80 +96,6 @@ void loop() {
   
   delay(1000);
 }
-//======================================================================================================
-
-// int cambien = 2; //Cảm biến nối chân số 5 Arduino
-// int giatri;
-
-// int den = 4; //Khai báo chân đèn nối với chân số 8 trên Arduino
-
-// void setup() 
-// {
-//   Serial.begin(115200);
-
-//   pinMode(den, OUTPUT); 
-//   digitalWrite(den, LOW); //Mặc định đèn tắt
-//   pinMode(cambien, INPUT); //Cảm biến nhận tín hiệu
-
-// }
-
-// void loop() 
-// {
-//   giatri = analogRead(cambien); //Đọc giá trị analog của cảm biến và gán vào biến giatri
-
-  // if (giatri > 1800) //Nếu giá trị quang trở lớn hơn 1000
-  // {
-  //   digitalWrite(den, HIGH); //Đèn sáng
-  // }
-  // else //Ngược lại
-  // {
-  //   digitalWrite(den, LOW); //Đèn tắt
-  // }
-  
-//   Serial.print("Gia tri cam bien: ");
-//   Serial.println(giatri);
-//   delay(200);
-
-// }
-
-
-// if(trời tối){
-//   if(có người){
-//     "đèn sáng";
-//     if(button == 1) "đèn sáng";
-//     else "đèn tắt";
-//   }
-//   else{
-//     "đèn tắt";
-//     if(button == 1) "đèn sáng";
-//   }
-// }else{
-//   "đèn tắt";
-//   if(button == 1) "đèn sáng";
-// }
-
-// void setup {
-//     valid_dark = 1;
-//     valid_light = 1;
-// }
-
-// void loop {
-//   If (smart_switch_signal || ada_switch_signal){
-//     toggle(light);
-//   }
-
-//   if (dark && count>1 && valid_dark)
-//   {
-//     light = on;
-//     valid_dark = 0;
-//     valid_light = 1;
-//   } else if (!dark && light == on && valid_light)
-//   {
-//     light = off;
-//     valid_dark = 1;
-//     valid_light = 0;
-//   }
-// }
 
 
 
